@@ -4,7 +4,14 @@ import ThemeContext from './contexts';
 
 const Home = () => {
   // BEGIN (write your solution here)
+    const { theme } = useContext(ThemeContext);
+    const { className } = theme;
 
+    return (
+        <article className={className}>
+            Текст для вкладки Home
+        </article>
+    );
   // END
 
   return (
